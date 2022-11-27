@@ -1,0 +1,46 @@
+.cover{
+    display:flex;
+    width: 100%;
+    height: calc(20000vw/320);
+    margin-top: calc(1600vw/320);
+    background-image: url(../../images/mobile/cover-trains.png);
+    position: relative;
+    z-index: 0;
+    background-size: cover;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+.cover::after{
+    content: "";
+    background: rgba(42,44,47,0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+@media screen and (min-width: 768px){
+    .cover{
+      height: calc(48000vw/768);
+      background-image: url(../../images/tablet/cover-trains.png);
+      margin-top: calc(9000vw/768);
+    }
+  }
+
+ @media screen and (min-width: 1024px){
+    .cover{
+      height: calc(64000vw/1024);
+      background-image: url(../../images/desktop/cover-trains.png);
+      margin-top: 92px;
+    }
+  }
+
+@media screen and (min-width: 1280px){
+    .cover{
+      width: calc(118400%/1280);
+      height: calc(74000vw/1280);
+      margin-left: calc(4800%/1280);
+      margin-right: calc(4800%/1280);
+    }
+  }

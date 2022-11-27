@@ -1,0 +1,26 @@
+.photo-grid__item{
+    width: 100%;
+    height: calc(21600vw/320);
+    object-fit: cover;
+  }
+  
+  @media screen and (min-width: 425px){
+    .photo-grid__item{
+      max-width: calc(35200vw/768);
+      height: calc(26400vw/768);
+    }
+  }
+  
+  @media screen and (min-width: 1024px){
+    .photo-grid__item{
+      max-width: calc(30000vw/1024);
+      height: calc(22500vw/1024);
+    }
+  }
+  @media screen and (min-width: 1280px){
+    .photo-grid__item{
+      max-width: calc(28400vw/1280);
+      height: calc(21300vw/1280);
+    }
+  }
+  

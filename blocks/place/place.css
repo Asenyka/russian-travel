@@ -1,0 +1,25 @@
+@media screen and (min-width: 768px){
+    .place{
+      display: grid;
+      grid-template-columns: calc(34000vw/768) calc(35200vw/768);
+      grid-template-rows: auto auto;
+      grid-template-areas: 
+        "heading url"
+        "image text";
+      column-gap: calc(2800vw/768);
+    }
+  }
+  
+  @media screen and (min-width: 1024px){
+    .place{
+      grid-template-columns: calc(44000vw/1024) calc(45600vw/1024);
+      column-gap: calc(3200vw/1024);
+    }
+  }
+  
+  @media screen and (min-width: 1280px){
+    .place{
+      grid-template-columns: calc(46000vw/1280) calc(48400vw/1280);
+      column-gap: calc(4000vw/1280);
+    }
+  }

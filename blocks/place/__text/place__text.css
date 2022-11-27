@@ -1,0 +1,10 @@
+.place__text{
+    margin: 10vw 5vw calc(5000vw/320);
+  }
+  
+  @media screen and (min-width: 768px){
+    .place__text{
+      grid-area: text;
+      margin: 0;
+    }
+  }

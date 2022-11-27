@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>Путешествия по России</title>
-  <link rel="stylesheet" href="./blocks/vendor/normalize.css">
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 
@@ -13,14 +12,14 @@
   <header class="header">
     <picture>
       <source srcset="./images/tablet/header-logo.svg" media="(min-width: 768px)">
-      <img class="logo header__lang-link" src="./images/mobile/header-logo.svg" alt="Логотип Россия">
+      <img class="header__logo" src="./images/mobile/header-logo.svg" alt="Логотип Россия">
     </picture>
     <div class="header__lang-links">
-      <a class="header__lang-link" href="#">Ru</a>
+      <a class="header__lang-link header__lang-link_ru-page" href="#">Ru</a>
       <a class="header__lang-link" href="#">En</a>
     </div>
   </header>
-  <main>
+  <main class="content">
     <section class="lead">
       <h1 class="lead__title">Путешествия
         по России</h1>

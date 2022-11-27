@@ -1,0 +1,10 @@
+.place__website{
+    margin: 10vw 5vw 0;
+  }
+  @media screen and (min-width: 768px){
+    .place__website{
+      grid-area: url;
+      margin: 0 0 48px;
+      align-self: end;
+    }
+  }
