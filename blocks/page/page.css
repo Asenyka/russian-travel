@@ -1,8 +1,8 @@
 .page {
-    padding: 0;
-    background: #2A2C2F;
-    font-family: 'Inter', sans-serif;
-    display: block;
-    color: #FFFFFF;
-    text-rendering: optimizeLegibility;
-  }
+  padding: 0;
+  background: #2a2c2f;
+  font-family: "Inter", sans-serif;
+  display: block;
+  color: #ffffff;
+  text-rendering: optimizeLegibility;
+}
