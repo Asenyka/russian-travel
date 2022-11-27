@@ -20,53 +20,39 @@
     url('../fonts/Inter-Bold.woff2');
 }
 
-section{
-  outline: solid 1px red;
-}
-p{
-  outline: solid 1px #0011ff;
-}
-img{
-  outline: solid 1px #00ff00;
-}
-picture{
-  outline: solid 1px #8400ff;
-}
+
 .page {
+  padding: 0;
   background: #2A2C2F;
-  font-family: 'Inter';
-  display: flex;
-  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+  display: block;
   color: #FFFFFF;
   text-rendering: optimizeLegibility;
 }
 
 .header{
-  margin: 5vw;
+  margin: 5vw 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 @media screen and (min-width: 768px){
   .header{
-    margin-top: 28px;
-    margin-left: calc(2400vw/768);
-    margin-right: calc(2400vw/768);
-    margin-bottom: 0;
+    margin: 28px calc(2400%/768) 0;
   }
 }
 
 @media screen and (min-width: 1024px){
   .header{
-    margin-left: calc(4800vw/1024);
-    margin-right: calc(4800vw/1024);
+    margin-left: calc(4800%/1024);
+    margin-right: calc(4800%/1024);
   }
 }
 
 @media screen and (min-width: 1280px){
   .header{
-    margin-left: calc(4800vw/1280);
-    margin-right: calc(4800vw/1280);
+    margin-left: calc(4800%/1280);
+    margin-right: calc(4800%/1280);
   }
 }
 
@@ -109,13 +95,13 @@ picture{
 }
 
 .lead{
-  width: fit-content;
+  width: 100%;
   display: flex;
   flex-direction: column;  
 }
 
 .lead__title{
-  margin: 10vw 5vw 5vw;
+  margin: 10vw 5% 5vw;
   font-weight: 900;
   font-size: 40px;
   line-height: 1.1;
@@ -125,7 +111,7 @@ picture{
 
 @media screen and (min-width: 768px){
   .lead__title{
-    margin: 48px calc(2400vw/768) 32px;
+    margin: 48px calc(2400%/768) 32px;
     font-weight: 900;
     font-size: 96px;
     line-height: 1.04; 
@@ -134,19 +120,19 @@ picture{
 
 @media screen and (min-width: 1024px){
   .lead__title{
-    margin-left: calc(15200vw/1024);
-    margin-right: calc(15200vw/1024);
+    margin-left: calc(15200%/1024);
+    margin-right: calc(15200%/1024);
   }
 }
 @media screen and (min-width: 1280px){
   .lead__title{
-    margin: calc(5600vw/1280) calc(28000vw/1280) 32px;
+    margin: calc(5600vw/1280) calc(28000%/1280) 32px;
   }
 }
 
 
 .lead__subtitle{
-  margin: 0 5vw 0;
+  margin: 0 5% 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -156,7 +142,7 @@ picture{
 
 @media screen and (min-width: 768px){
   .lead__subtitle{
-    margin: 0 calc(6400vw/768) 0;
+    margin: 0 calc(6400%/768) 0;
     font-size: 30px;
     line-height: 1.2;
   }
@@ -164,13 +150,13 @@ picture{
 
 @media screen and (min-width: 1024px){
   .lead__subtitle{
-    margin: 0 calc(19200vw/1024) 0;
+    margin: 0 calc(19200%/1024) 0;
   }
 }
 
 @media screen and (min-width: 1024px){
   .lead__subtitle{
-    margin: 0 calc(32000vw/1280) 0;
+    margin: 0 calc(32000%/1280) 0;
   }
 }
 
@@ -187,8 +173,8 @@ picture{
 
 @media screen and (min-width: 1024px){
   .lead__image{
-    margin: calc(5600vw/1024) calc(4800vw/1024) 0;
-    width: calc(92800vw/1024);
+    margin: calc(5600vw/1024) calc(4800%/1024) 0;
+    width: calc(92800%/1024);
     height: calc(58000vw/1024);
     object-fit: cover;
   }
@@ -196,8 +182,8 @@ picture{
 
 @media screen and (min-width: 1280px){
   .lead__image{
-    margin: calc(6400vw/1280) calc(14800vw/1280) 0;
-    width: calc(98400vw/1280);
+    margin: calc(6400vw/1280) calc(14800%/1280) 0;
+    width: calc(98400%/1280);
     height: calc(61500vw/1280);
     object-fit: cover;
   }
@@ -205,7 +191,7 @@ picture{
 
 
 .lead__caption{
-  margin: 8px 5vw 0;
+  margin: 8px 5% 0;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.4;
@@ -215,19 +201,19 @@ picture{
 }
 @media screen and (min-width: 768px){
   .lead__caption{
-    margin-left: calc(2400vw/768);  
+    margin-left: calc(2400%/768);  
   }
 }  
 
 @media screen and (min-width: 1024px){
   .lead__caption{
-    margin-left: calc(4800vw/1024);  
+    margin-left: calc(4800%/1024);  
   }
 } 
 
 @media screen and (min-width: 1280px){
   .lead__caption{
-    margin-left: calc(14800vw/1280);  
+    margin-left: calc(14800%/1280);  
   }
 } 
 .intro{
@@ -235,20 +221,20 @@ picture{
 }
 @media screen and (min-width: 768px){
   .intro{
-    margin: calc(8800vw/768) calc(2400vw/768) 0;
+    margin: calc(8800vw/768) calc(2400%/768) 0;
   }
 }
 
 @media screen and (min-width: 1024px){
   .intro{
-    margin: 92px calc(28600vw/1024) 0 calc(4800vw/1024);
+    margin: 92px calc(28600%/1024) 0 calc(4800vw/1024);
   }
 }
 
 @media screen and (min-width: 1280px){
   .intro{
-    margin-left: calc(14800vw/1280);
-    margin-right: calc(44200vw/1280);
+    margin-left: calc(14800%/1280);
+    margin-right: calc(44200%/1280);
   }
 }
 
@@ -288,59 +274,60 @@ picture{
 .photo-grid{
   display: flex;
   flex-direction: column;
-  margin: 20vw 5vw;
+  margin: 20vw 5%;
   row-gap: calc(1200vw/320);
 }
 
 @media screen and (min-width: 425px){
   .photo-grid{
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, auto);
-    grid-gap: calc(1600vw/768);
-    margin: calc(8800vw/768) calc(2400vw/768);
+    gap: calc(1600vw/768);
+    margin: calc(8800vw/768) calc(2400%/768);
     }
 }
 
 @media screen and (min-width: 1024px){
   .photo-grid{
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
-    grid-gap: calc(1400vw/1024);
-    margin: 92px calc(4800vw/1024);
+    gap: calc(1400vw/1024);
+    margin: 92px calc(4800%/1024);
     }
 }
 
 @media screen and (min-width: 1280px){
   .photo-grid{
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-gap: calc(1600vw/1280);
-    margin: 92px calc(4800vw/1280);
+    gap: calc(1600vw/1280);
+    margin: 92px calc(4800%/1280);
     }
 }
+
 .photo-grid__item{
-  width: calc(28800vw/320);
+  width: 100%;
   height: calc(21600vw/320);
   object-fit: cover;
 }
 
 @media screen and (min-width: 425px){
   .photo-grid__item{
-    width: calc(35200vw/768);
+    max-width: calc(35200vw/768);
     height: calc(26400vw/768);
   }
 }
 
 @media screen and (min-width: 1024px){
   .photo-grid__item{
-    width: calc(30000vw/1024);
+    max-width: calc(30000vw/1024);
     height: calc(22500vw/1024);
   }
 }
 @media screen and (min-width: 1280px){
   .photo-grid__item{
-    width: calc(28400vw/1280);
+    max-width: calc(28400vw/1280);
     height: calc(21300vw/1280);
   }
 }
@@ -350,21 +337,21 @@ picture{
 }
 @media screen and (min-width: 768px){
   .places{
-    margin: 0 calc(2400vw/768);
+    margin: 0 calc(2400%/768);
     row-gap: calc(7300vw/768);
    }
 }
 
 @media screen and (min-width: 1024px){
   .places{
-    margin: 0 calc(4800vw/1024);
+    margin: 0 calc(4800%/1024);
     row-gap: 80px;
    }
 }
 
 @media screen and (min-width: 1280px){
   .places{
-    margin: 0 calc(14800vw/1280);
+    margin: 0 calc(14800%/1280);
   }
 }
 
@@ -456,7 +443,7 @@ picture{
 }
 
 .place__image{
-  width: 100vw;
+  width: 100%;
   height: 100vw;
   margin: 10vw 0 0;
   object-fit: cover;
@@ -526,7 +513,7 @@ picture{
 
 .cover{
   display:flex;
-  width: 100vw;
+  width: 100%;
   height: calc(20000vw/320);
   margin-top: calc(1600vw/320);
   background-image: url(../images/mobile/cover-trains.png);
@@ -534,6 +521,7 @@ picture{
   z-index: 0;
   background-size: cover;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .cover::after{
@@ -563,18 +551,17 @@ picture{
 
 @media screen and (min-width: 1280px){
   .cover{
-    width: calc(118400vw/1280);
+    width: calc(118400%/1280);
     height: calc(74000vw/1280);
-    margin-left: calc(4800vw/1280);
-    margin-right: calc(4800vw/1280);
+    margin-left: calc(4800%/1280);
+    margin-right: calc(4800%/1280);
   }
 }
 
 .cover__link{
   width: 100%; 
   box-sizing: border-box;
-  padding: 10vw 5vw 10vw;
-  display: block;
+  padding: 10% 5% 10%;
   text-decoration: none;
   color: #FFFFFF;
   position: relative;
@@ -588,19 +575,19 @@ picture{
 
 @media screen and (min-width: 768px){
   .cover__link{
-    padding: calc(11500vw/768) calc(10400vw/768);
+    padding: calc(11500%/768) calc(10400%/768);
   }
 }
 
 @media screen and (min-width: 1024px){
   .cover__link{
-    padding: calc(19500vw/1024) calc(23200vw/1024);
+    padding: calc(19500%/1024) calc(23200%/1024);
   }
 }
 
 @media screen and (min-width: 1024px){
   .cover__link{
-    padding: calc(24500vw/1280) calc(31200vw/1280);
+    padding: calc(24500%/1280) calc(31200%/1280);
   }
 }
 
@@ -638,7 +625,7 @@ picture{
 } 
 
 .footer{
-  margin: 20vw 5vw 7.5vw;
+  margin: 20% 5% 7.5%;
   display: flex;
   flex-direction: column;
 }
@@ -647,18 +634,18 @@ picture{
   .footer{
     flex-direction: row;
     justify-content: space-between;
-    margin: calc(8800vw/768) calc(2400vw/768) calc(2400vw/768);
+    margin: calc(8800%/768) calc(2400%/768) calc(2400%/768);
     } 
 } 
 
 @media screen and (min-width: 1024px){
   .footer{
-    margin: 92px calc(4800vw/1024) 24px;
+    margin: 92px calc(4800%/1024) 24px;
   } 
 } 
 @media screen and (min-width: 1280px){
   .footer{
-    margin: 92px calc(4800vw/1280) 24px;
+    margin: 92px calc(4800%/1280) 24px;
   } 
 } 
 
