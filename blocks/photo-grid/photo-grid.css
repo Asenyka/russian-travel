@@ -3,6 +3,8 @@
   flex-direction: column;
   margin: 20vw 5%;
   row-gap: calc(1200vw / 320);
+  padding: 0;
+  list-style: none;
 }
 
 @media screen and (min-width: 425px) {

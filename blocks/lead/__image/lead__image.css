@@ -1,6 +1,8 @@
 .lead__image {
+  display: block;
   margin: 12.5vw 0 0;
   width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -14,7 +16,6 @@
     margin: calc(5600vw / 1024) calc(4800% / 1024) 0;
     width: calc(92800% / 1024);
     height: calc(58000vw / 1024);
-    object-fit: cover;
   }
 }
 
@@ -23,6 +24,5 @@
     margin: calc(6400vw / 1280) calc(14800% / 1280) 0;
     width: calc(98400% / 1280);
     height: calc(61500vw / 1280);
-    object-fit: cover;
   }
 }
