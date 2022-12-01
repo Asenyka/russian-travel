@@ -1,27 +1,18 @@
 .lead__title {
-  margin: 10vw 5% 5vw;
+  margin: 10vw auto 5vw;
   font-weight: 900;
   font-size: 40px;
   line-height: 1.1;
   text-align: center;
+  max-width: 288px;
 }
 
 @media screen and (min-width: 768px) {
   .lead__title {
-    margin: 48px calc(2400% / 768) 32px;
+    margin-top: 48px;
+    margin-bottom: 32px;
     font-size: 96px;
     line-height: 1.04;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .lead__title {
-    margin-left: calc(15200% / 1024);
-    margin-right: calc(15200% / 1024);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .lead__title {
-    margin: calc(5600vw / 1280) calc(28000% / 1280) 32px;
+    max-width: 720px;
   }
 }

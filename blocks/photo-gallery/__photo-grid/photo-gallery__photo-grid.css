@@ -1,0 +1,22 @@
+.photo-gallery__photo-grid {
+  margin: 20vw 5%;
+}
+
+@media screen and (min-width: 425px) {
+    .photo-gallery__photo-grid {
+      margin: calc(8800vw / 768) calc(2400% / 768);
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .photo-gallery__photo-grid{
+      margin: 92px calc(4800% / 1024);
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .photo-gallery__photo-grid {
+      margin: 92px calc(4800% / 1280);
+    }
+  }
+  
